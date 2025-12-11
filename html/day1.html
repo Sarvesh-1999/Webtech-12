@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ! HEADING TAGS -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- ! PARAGRAPH TAG  -->
+    <p>
+      Lorem <br />
+      ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Dolores modi ut vel ratione unde totam, exercitationem laudantium
+      porro recusandae ipsam dicta aperiam doloremque libero eligendi fuga rem
+      ea maxime obcaecati, ducimus, laboriosam itaque? Consectetur dicta sunt
+      nulla expedita, accusantium adipisci? Suscipit, qui ratione! Iste quidem
+      eum aperiam iure aliquid voluptatibus tempore rerum sed obcaecati
+      distinctio molestias, in consequuntur, ipsum tenetur neque dolores? Odio
+      autem cupiditate nisi quisquam at facilis tenetur magnam accusamus
+      voluptatibus ut nam eveniet cumque nulla dolore eligendi quod, doloremque
+      maiores omnis, sit vero quam maxime consequatur ducimus incidunt. Tenetur
+      quis maxime recusandae voluptates sint voluptatem ex error.
+    </p>
+
+    <!-- ! PRE FORMATTING TAG -->
+    <pre>
+Lorem
+       ipsum dolor sit amet consectetur adipisicing elit. Natus numquam, ex, cum facilis illum esse ullam pariatur eligendi iste animi neque qui molestiae sapiente laboriosam possimus officia ratione accusamus aspernatur! Aut ab eaque voluptatum delectus quisquam nam commodi architecto animi aperiam. Et quisquam aliquam fugit expedita minima eius reiciendis autem?</pre
+    >
+
+    <hr />
+
+    <!-- ! TEXT FORMATTING TAGS -->
+    <b>bold</b>
+    <strong>strong</strong>
+    <i>italics</i>
+    <em>emphasis</em>
+    <u>underline</u>
+    <ins>ins</ins>
+    <strike>strike</strike>
+    <del>del</del>
+    <mark>mark</mark>
+    <sup>2</sup>
+    <sub>2</sub>
+
+    <!-- 
+      behavior = "scroll (default) / slide / alternate"
+      direction = "left (default) / right"
+      -->
+    <marquee behavior="scroll" direction="right" scrollamount="6">
+      Web Development
+    </marquee>
+
+    <!-- ! ELEMENTS IN HTML -->
+    <!-- tag  <h1></h1> -->
+    <!-- element <h2>ABC</h2> -->
+    <!-- 
+      ELEMENTS ARE OF 3 TYPES
+      1) BLOCK ELEMENTS 
+       - Elements which takes the full width of the screen 
+       - Accepts height and width
+
+      2) INLINE ELEMENTS
+       - Elements which takes only content width
+       - Do not accepts height and width
+       
+      3) INLINE-BLOCK ELEMENTS
+      - Elements which takes only content width
+      - Accepts height and width
+      -->
+
+    <!-- ! BLOCK ELEMENTS -->
+    <div style="background-color: yellow; height: 300px; width: 400px">
+      <h1>Hello World</h1>
+      <h2>Hello Universe</h2>
+      <p>Lorem, ipsum.</p>
+      <pre>Lorem ipsum dolor sit.</pre>
+    </div>
+
+    <!-- ! INLINE ELEMENTS -->
+    <span style="background-color: lightblue; height: 300px; width: 400px">
+      <em>HTML</em>
+      <strong>CSS</strong>
+      <del>JS</del>
+    </span>
+
+    <!-- ! INLINE-BLOCK ELEMENTS -->
+
+    <!-- ABSOLUTE PATH -->
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
+      height="200"
+      alt=""
+    />
+
+    <!-- RELATIVE PATH -->
+    <!-- 
+      1) ./ is used to target current folder
+      2) ../ is used to navigate one folder back
+     -->
+    <img src="../images/user1.png" height="100" alt="" />
+
+    <!-- <marquee behavior="slide" direction="right" scrollamount="50">
+      Hello World
+    </marquee> -->
+
+    <hr />
+
+    <center>
+      <h1>Learn Anchor Tag</h1>
+    </center>
+
+    <a href="https://www.flipkart.com" target="_self">flipkart</a>
+    <br />
+    <a href="https://www.amazon.in" target="_blank">Amazon</a>
+    <br />
+    <a href="https://myntra.com" target="_main">Myntra</a>
+    <br />
+    <a href="./day1.html" target="_top">Go to top</a>
+    <br />
+
+    <!-- iframe is used to create nested webpage -->
+    <iframe src="./NewPage.html" frameborder="1" width="200"></iframe>
+
+    <!-- google maps -->
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.7138707083573!2d77.317099210759!3d28.578353575592953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4595fb7a80d%3A0xff1dc35f4e024e9!2sQSpiders%20Noida-Software%20Development%20Training%20%26%20Placement%20Institute!5e0!3m2!1sen!2sin!4v1765178345224!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+    <!-- Youtube  -->
+    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/FCNa1GFnPG4" title="⚠️ Next.js &amp; React Users in DANGER! Update NOW or Risk Getting Hacked!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+    <br />
+
+    <a href="tel:9876543210">9876543210</a>
+    <br />
+    <a href="mailto:johndoe@gmail.com">johndoe@gmail.com</a>
+
+    <center>
+      <h1>Lists in HTML</h1>
+    </center>
+
+    <!-- Ordered List -->
+    <ol type="1" start="20" reversed>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <ul type="square">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+
+    <!-- Description List -->
+    <dl>
+      <dt>Html</dt>
+      <dd>Its a markup language used to create structure of webpage</dd>
+    </dl>
+
+    <!-- 
+    ! SEMATIC TAGS
+    tags which tells meaning by its name
+     -->
+    <header>header</header>
+    <details>
+      <summary>Classes</summary>
+      <li>Web tech</li>
+      <li>SQL</li>
+      <li>Java</li>
+    </details>
+    <article>article</article>
+    <main>main</main>
+    <nav>nav</nav>
+    <section>section</section>
+    <table>
+      table
+    </table>
+    <aside>aside</aside>
+    <figure>figure</figure>
+    <figcaption>figcaption</figcaption>
+    <form>form</form>
+    <footer>footer</footer>
+
+    <!-- audio and video -->
+
+    <video src="../videos/vid1.mp4" height="400" autoplay muted loop></video>
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      controls
+      height="300"
+    ></video>
+
+    <br />
+    <br />
+
+    <audio
+      src="../audios/MAHABHARATA TITLE TRACK  SHREEWARRNA RAWAT.mp3"
+      controls
+    ></audio>
+
+    
+  </body>
+</html>

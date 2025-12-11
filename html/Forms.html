@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Fill this form</legend>
+
+    <form>
+        <label for="username">Username : </label>
+        <input required type="text" id="username" placeholder="Enter Username"  name="username">
+
+        <br><br>
+
+        <label for="email">Email : </label>
+        <input type="email" id="email" placeholder="Enter Email" name="email">
+
+        <br><br>
+
+        <label for="password">Password : </label>
+        <input type="password" id="password" placeholder="Enter Password" name="password">
+
+        <br><br>
+
+        <label for="gender">Gender : </label>
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <br><br>
+
+        <label for="country">Country : </label>
+        <select name="country" id="country">
+            <option value="" disabled selected>Select country</option>
+            <option value="ind">IND</option>
+            <option value="aus">AUS</option>
+            <option value="eng">ENG</option>
+        </select>
+
+        <br><br>
+
+        <label for="course">Course Name : </label>
+        <input list="courseList" type="text" name="course" id="course" placeholder="Enter Course">
+
+        <datalist id="courseList">
+            <option value="Mern Stack">Mern Stack</option>
+            <option value="Java Fullstack">Java Fullstack</option>
+            <option value="Python Fullstack">Python Fullstack</option>
+        </datalist>
+
+        <br><br>
+
+        <label for="hobbies">Hobbies : </label>
+        <label for="coding">coding</label>
+        <input type="checkbox" name="hobbies" id="coding" value="coding">
+        <label for="gaming">gaming</label>
+        <input type="checkbox" name="hobbies" id="gaming" value="gaming">
+
+        <br><br>
+
+        <label for="phone">Phone No : </label>
+        <input type="tel" name="phone" id="phone" maxlength="10" minlength="10">
+
+        <br><br>
+
+        <label for="dob">DOB : </label>
+        <input type="date" name="dob" id="dob">
+
+        <br><br>
+
+        <label for="meeting">Meeting Time : </label>
+        <input type="time" name="meeting" id="meeting">
+
+        <br><br>
+
+        <label for="week">Joining week : </label>
+        <input type="week" name="week" id="week">
+
+        <br><br>
+
+        <label for="resume">Resume : </label>
+        <input type="file" name="resume" id="resume" multiple>
+
+        <br><br>
+
+        <label for="address">Address : </label>
+        <textarea name="address" id="address" rows="5" cols="7" style="resize: none;"></textarea>
+
+        <br><br>
+        <button type="submit">Submit Tag</button>
+        <input type="submit" value="Login">
+        <input type="reset">
+    </form>
+    </fieldset>
+
+
+</body>
+</html>
