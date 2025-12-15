@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* check for only attribute, not value */
+        div[name]{
+            background-color: yellow;
+        }
+
+        /* check for attribute with exact value */
+        div[name = "box1"]{
+            background-color: blue;
+        }
+
+        /* check for hypen-seperated value */
+        div[name |= "box3"]{
+            background-color: aqua;
+        }
+
+        /* check for space seperated value */
+        div[name ~= "area"]{
+            background-color: blueviolet;
+        }
+
+        /* starts with */
+        div[name ^= "con"]{
+            background-color: chartreuse;
+        }
+
+        /* ends with */
+        div[name $= "per"]{
+            background-color: crimson;
+        }
+
+        /* In between */
+        div[name *= "rou"]{
+            background-color: burlywood;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Learn Attribute Selectors</h1>
+
+    <div name="box1">Div 1</div>
+    <div name="box2">Div 2</div>
+    <div name="box3-content">Div 2</div>
+    <div name="text area">Div 4</div>
+    <div name="container">Div 5</div>
+    <div name="wrapper">Div 6</div>
+    <div name="carousel">Div 7</div>
+
+</body>
+</html>
