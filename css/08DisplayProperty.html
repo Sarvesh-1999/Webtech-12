@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        height: 300px;
+        width: 150px;
+        background-color: black;
+        margin-top: 10px;
+        visibility: hidden;
+        /* display: none; */
+        opacity: 0;
+        transition: 1s;
+      }
+      .btn1:hover + .box1 {
+        visibility: visible;
+        /* display: block; */
+        opacity: 1;
+      }
+
+      .container1 {
+        height: 500px;
+        width: 100%;
+        background-color: yellow;
+        display: flex;
+
+        flex-direction: column;
+        /* flex-start / flex-end / center / space-evenly / space-around / space-between */
+        justify-content: center;
+
+        /* flex-start / flex-end / center */
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 50px;
+      }
+      .item {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Display Property</h1>
+
+    <!-- <button class="btn1">BTN 1</button>
+    <section class="box1"></section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, rem?</p> -->
+
+    <main class="container1">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      
+    </main>
+  </body>
+</html>

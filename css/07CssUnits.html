@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* FIXED */
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        font-size: 50px;
+      }
+      /* DEPENDS UPON VIEWPORT HEIGHT AND WIDTH */
+      .box2 {
+        height: 50vh;
+        width: 50vw;
+        background-color: aqua;
+      }
+      .parent {
+        height: 500px;
+        width: 1200px;
+        background-color: black;
+      }
+      /* DEPENDS UPON PARENT ELEMENT'S PROPERTY */
+      .child {
+        height: 50%;
+        width: 50%;
+        background-color: red;
+      }
+
+      /* DEPENDS UPON CURRENT ELEMENT'S FONT SIZE
+        BY DEFAULT :- 1em = 16px
+      */
+      .box3 {
+        height: 1em;
+        width: 1em;
+        background-color: blue;
+        font-size: 50px;
+      }
+
+      /* DEPENDS UPON ROOT ELEMENT'S FONT SIZE
+        BY DEFAULT :- 1rem = 16px  */
+      :root {
+        font-size: 26px;
+      }
+
+      .box4 {
+        height: 1rem;
+        width: 1rem;
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn CSS Units</h1>
+
+    <div class="box1">BOX1</div>
+    <div class="box2"></div>
+
+    <section class="parent">
+      <article class="child"></article>
+    </section>
+
+    <div class="box3"></div>
+
+    <div class="box4"></div>
+  </body>
+</html>
