@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1{
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+        background-color: lightblue;
+        transition: 0.5s;
+      }
+      @media (min-width: 375px) {
+        h1{
+            font-size: 18px;
+            padding: 15px;
+            background-color: yellow;
+        }
+      }
+      @media (min-width : 425px) {
+        h1{
+            font-size: 20px;
+            padding: 18px;
+            background-color: lightcoral;
+        }
+      }
+       @media (min-width : 768px) {
+        h1{
+            font-size: 22px;
+            padding: 20px;
+            background-color: lightgreen;
+        }
+      }
+       @media (min-width : 1024px) {
+        h1{
+            font-size: 24px;
+            padding: 22px;
+            background-color: lightskyblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Media Query</h1>
+  </body>
+</html>
