@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: yellowgreen;
+        animation-name: boxmove;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+      }
+      @keyframes boxmove {
+        from {
+          margin-left: 0;
+          border-radius: 0;
+        }
+        to {
+          margin-left: calc(100% - 200px);
+          background-color: yellow;
+          border-radius: 50%;
+        }
+      }
+
+      .loader {
+        height: 200px;
+        width: 200px;
+        border: 20px solid gray;
+        border-top: 20px solid gainsboro;
+        border-radius: 50%;
+        animation-name: spinner;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes spinner {
+        from {
+          rotate: 0deg;
+        }
+        to {
+          rotate: 360deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animations</h1>
+    <div class="box1"></div>
+
+    <div class="loader"></div>
+  </body>
+</html>
