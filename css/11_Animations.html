@@ -50,12 +50,51 @@
           rotate: 360deg;
         }
       }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        animation-name: boxmove2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      @keyframes boxmove2 {
+        0% {
+          top: 0;
+          left: 0;
+          background-color: yellow;
+        }
+        25% {
+          top: 0;
+          left: calc(100% - 200px);
+        }
+        50% {
+          top: calc(100% - 200px);
+          left: calc(100% - 200px);
+          background-color: red;
+        }
+        75% {
+          top: calc(100% - 200px);
+          left: 0;
+        }
+        100% {
+          top: 0;
+          left: 0;
+          background-color: orange;
+        }
+      }
     </style>
   </head>
   <body>
     <h1>Animations</h1>
-    <div class="box1"></div>
+    <!-- <div class="box1"></div> -->
 
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
+
+    <div class="box2"></div>
   </body>
 </html>

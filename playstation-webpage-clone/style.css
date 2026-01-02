@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.sony-banner {
+  width: 100%;
+  /* height: 36px; */
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+.sony-logo {
+  height: 36px;
+  width: 100px;
+  background-image: url("/assets/sony.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  /* border: 1px solid black; */
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.navbar-logo > img {
+  height: 50px;
+}
+.navlinks {
+  display: flex;
+  list-style: none;
+  padding: 0 20px;
+}
+.navlinks > li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.signin-search-wrapper {
+  margin-left: auto;
+}
+.signin-search-wrapper > button {
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.hero-banner {
+  width: 100%;
+  height: 130vh;
+  background-image: url("/assets/heroImage.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner > img {
+  height: 130px;
+  margin-top: 160px;
+}
+
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121314;
+  padding: 100px 0;
+}
+.about-ps {
+  width: 70vw;
+  height: 70vh;
+  border: 2px solid white;
+  margin: 0 auto;
+  display: flex;
+}
+.ps-content,
+.video-container {
+  height: 100%;
+  width: 50%;
+  border: 2px solid white;
+}
+.ceo-container {
+  width: 70vw;
+  height: 70vh;
+  margin: 100px auto 0 auto;
+  border: 2px solid white;
+  position: relative;
+}
+.ceo-image {
+  height: 300px;
+  width: 300px;
+  border: 1px solid white;
+  position: absolute;
+  background-color: aqua;
+  top: 10%;
+  left: 12%;
+  background-image: url("/assets/ceoImage.png");
+  background-position: center;
+  background-size: cover;
+}
+.ceo-content {
+  height: 250px;
+  width: 500px;
+  border: 1px solid white;
+  position: absolute;
+  background-color: black;
+  top: 30%;
+  left: 35%;
+  color: white;
+}
